@@ -44,7 +44,7 @@ Este projeto tem fins educacionais e serve como vitrine de layout, estrutura de 
 
 ## 📸 Preview
 
-![Preview]()  
+![Preview](preview.png)  
 <sub>*Imagem ilustrativa da primeira tela do sistema*</sub>
 
 ---
