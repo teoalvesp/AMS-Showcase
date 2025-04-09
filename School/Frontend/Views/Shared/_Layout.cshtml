@@ -7,12 +7,27 @@
 </head>
 
 <body>
+
     <div class="main-app-container shadow-lg rounded-4">
+        <!-- Ícone de abrir menu (hambúrguer) -->
+        <a href="#" class="icon-mobile" id="btn-open-sidebar">
+            <i class="bi bi-list"></i>
+        </a>
+        <img src="~/images/logo-ams.png" alt="Imagem Topo" class="logo-mobile-top"
+            style="position: fixed; top: 5px; left: 50%; transform: translateX(-50%); width: 80px; z-index: 1055;" />
+
+
+
         <div class="d-flex h-100 w-100">
+
             <!-- Sidebar -->
-            <aside class="sidebar px-3 py-4 shadow-sm rounded-end">
-                <img src="~/images/logo-ams.png" alt="AMS Project" class="img-fluid mb-4" />
-                <ul class="nav flex-column">
+            <aside class="sidebar px-3 py-4 shadow-sm rounded-end" id="mobile-sidebar">
+                <a href="#" class="close-sidebar" id="btn-close-sidebar">
+                    <i class="bi bi-x-lg"></i>
+                </a>
+
+                <img src="~/images/logo-ams.png" alt="AMS Project" id="img-logo" class="img-fluid mb-4" />
+                <ul class="nav flex-column mynav">
                     <li class="nav-item mb-2">
 
                         <a class="nav-link active" href="#" data-content="dashboard"> <i class="bi bi-border-style"></i>
@@ -40,9 +55,12 @@
             <!-- Aqui o Index.cshtml entra -->
             @RenderBody()
         </div>
+        <!-- Overlay -->
+        <div class="sidebar-overlay d-none" id="sidebar-overlay"></div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js"></script>
     <script src="~/js/dinamicImage.js"></script>
+    <script src="~/js/sidebar.js"></script>
 </body>

@@ -96,12 +96,138 @@ i {
     bottom: 0 !important;
     right: 0 !important;
     transform: translate(0%, 0%);
-    max-height: 80%;
-    max-width: 80%;
-    height: 60%;
+    max-height: 60%;
+    max-width: 60%;
+    height: 50%;
     width: auto;
     opacity: 0.80;
     pointer-events: none;
     user-select: none;
     object-fit: contain;
+}
+
+.logo-mobile-top {
+    display: none; /* padrão: escondido */
+}
+
+.close-sidebar {
+    display: none;
+}
+
+/* Icone mobile */
+.icon-mobile {
+    display: none;
+    position: fixed; 
+    top: 20px;
+    left: 20px;
+    z-index: 1055; 
+    font-size: 30px;
+    color: #000;
+    cursor: pointer;
+    pointer-events: auto; 
+}
+
+
+#mobile-sidebar {
+    transition: transform 0.3s ease;
+}
+
+
+@media (max-width: 991.98px) {
+    #mobile-sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 40%;
+        max-width: 300px;
+        background-color: #fff;
+        transform: translateX(-100%);
+        z-index: 1002;
+        border-radius: 0 10px 10px 0;
+    }
+
+    #mobile-sidebar.active {
+        transform: translateX(0);
+    }
+
+    .sidebar-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 1000;
+    }
+
+    .sidebar-overlay.d-none {
+        display: none;
+    }
+
+    .close-sidebar {
+        position: absolute;
+        top: 2.5rem;
+        right: 2rem;
+        font-size: 20px;
+        color: #000;
+        cursor: pointer;
+    }
+
+    .icon-mobile {
+        display: block;
+    }
+
+    .close-sidebar {
+        display: block;
+        position: absolute;
+        top: 2.5rem;
+        right: 2rem;
+        font-size: 20px;
+        color: #000;
+        cursor: pointer;
+        z-index: 1055;
+    }
+
+    #main-content .content-image {
+        
+        max-height: 50%;
+        max-width: 50%;
+    }
+
+    html {
+        font-size: 12px;
+      }
+
+    .nav-lex-column {
+        width: 75%;
+    }
+    
+    #img-logo {
+        display: none !important;
+    }
+
+    /* Garante que a navbar fique fixa no topo */
+    #mobile-navbar {
+        position: sticky;
+        top: 0;
+        z-index: 1050;
+    }
+
+   
+
+    .mynav {
+        margin-top: 5rem;
+    }
+    
+    
+    .logo-mobile-top {
+        display: block;
+    }
+
+    #dynamic-content {
+        margin-top: 4rem;
+    }
+    
+    
 }

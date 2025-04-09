@@ -50,6 +50,17 @@
         const viewName = link.getAttribute('data-content');
         if (viewName) {
             loadView(viewName);
+
+            // Fecha o menu lateral no mobile se estiver aberto
+            if (window.innerWidth <= 991.98) {
+                const sidebar = document.getElementById("mobile-sidebar");
+                const overlay = document.getElementById("sidebar-overlay");
+
+                if (sidebar && sidebar.classList.contains("active")) {
+                    sidebar.classList.remove("active");
+                    overlay.classList.add("d-none");
+                }
+            }
         }
     });
 
