@@ -66,6 +66,7 @@ Crie uma issue ou um pull request!
 
 Se quiser trocar ideia sobre o projeto ou tirar dúvidas:
 - Email: [teoalves.dev@gmail.com]
-- LinkedIn: [[linkedin.com/in/theusz](https://www.linkedin.com/in/theusz/)]
+- LinkedIn: [[linkedin.com/in/theusz](https://www.linkedin.com/in/theusz/)
 
 ---
+Deploy: (https://sistema-gestao-escolar-preview.onrender.com/)
