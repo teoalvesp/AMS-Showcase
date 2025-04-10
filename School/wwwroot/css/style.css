@@ -121,7 +121,7 @@ i {
     top: 20px;
     left: 20px;
     z-index: 1055; 
-    font-size: 30px;
+    font-size: 50px;
     color: #000;
     cursor: pointer;
     pointer-events: auto; 
@@ -207,7 +207,7 @@ i {
         display: none !important;
     }
 
-    /* Garante que a navbar fique fixa no topo */
+    
     #mobile-navbar {
         position: sticky;
         top: 0;
