@@ -107,7 +107,7 @@ i {
 }
 
 .logo-mobile-top {
-    display: none; /* padrão: escondido */
+    display: none;
 }
 
 .close-sidebar {
@@ -169,7 +169,7 @@ i {
         position: absolute;
         top: 2.5rem;
         right: 2rem;
-        font-size: 20px;
+        font-size: 25px;
         color: #000;
         cursor: pointer;
     }
@@ -183,7 +183,7 @@ i {
         position: absolute;
         top: 2.5rem;
         right: 2rem;
-        font-size: 20px;
+        font-size: 25px;
         color: #000;
         cursor: pointer;
         z-index: 1055;
@@ -196,7 +196,7 @@ i {
     }
 
     html {
-        font-size: 12px;
+        font-size: 18px;
       }
 
     .nav-lex-column {
@@ -217,7 +217,7 @@ i {
    
 
     .mynav {
-        margin-top: 5rem;
+        margin-top: 7rem;
     }
     
     
