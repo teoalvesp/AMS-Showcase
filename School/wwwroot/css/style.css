@@ -11,7 +11,7 @@ body {
 .main-app-container {
     width: 99.5%;
     height: 99.5vh;
-    background-color: #fff;
+    background-color: #d3ecf94a !important;
     border-radius: 10px !important;
     padding: 0;
     overflow: hidden;
@@ -98,7 +98,7 @@ i {
     transform: translate(0%, 0%);
     max-height: 70%;
     max-width: 70%;
-    height: 50%;
+    height: 40%;
     width: auto;
     opacity: 0.80;
     pointer-events: none;
