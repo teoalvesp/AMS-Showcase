@@ -1,4 +1,4 @@
-# AMS-Showcase 🎓📊
+# AMS Project - Gestão Escolar 🎓📊
 
 Versão demonstrativa (genérica) de um sistema web de gestão escolar.  
 Este projeto tem fins educacionais e serve como vitrine de layout, estrutura de código e organização de views.
@@ -44,7 +44,7 @@ Este projeto tem fins educacionais e serve como vitrine de layout, estrutura de 
 
 ## 📸 Preview
 
-![Preview](preview.png)  
+![Preview](preview.jpg)  
 <sub>*Imagem ilustrativa da primeira tela do sistema*</sub>
 
 ---
