@@ -11,7 +11,7 @@ body {
 .main-app-container {
     width: 99.5%;
     height: 99.5vh;
-    background-color: #fff;
+    background-color: #d3ecf94a !important;
     border-radius: 10px !important;
     padding: 0;
     overflow: hidden;
@@ -96,9 +96,9 @@ i {
     bottom: 0 !important;
     right: 0 !important;
     transform: translate(0%, 0%);
-    max-height: 60%;
-    max-width: 60%;
-    height: 50%;
+    max-height: 70%;
+    max-width: 70%;
+    height: 40%;
     width: auto;
     opacity: 0.80;
     pointer-events: none;
@@ -107,7 +107,7 @@ i {
 }
 
 .logo-mobile-top {
-    display: none; /* padrão: escondido */
+    display: none;
 }
 
 .close-sidebar {
@@ -118,11 +118,11 @@ i {
 .icon-mobile {
     display: none;
     position: fixed; 
-    top: 20px;
+    top: 1.7rem;
     left: 20px;
     z-index: 1055; 
-    font-size: 30px;
-    color: #000;
+    font-size: 3rem;
+    color: #206bf7;
     cursor: pointer;
     pointer-events: auto; 
 }
@@ -134,17 +134,22 @@ i {
 
 
 @media (max-width: 991.98px) {
+
+    html {
+        font-size: 2rem;
+      }
+
     #mobile-sidebar {
         position: fixed;
         top: 0;
         left: 0;
         height: 100vh;
-        width: 40%;
-        max-width: 300px;
+        width: 80%;
         background-color: #fff;
         transform: translateX(-100%);
         z-index: 1002;
         border-radius: 0 10px 10px 0;
+        
     }
 
     #mobile-sidebar.active {
@@ -164,12 +169,13 @@ i {
     .sidebar-overlay.d-none {
         display: none;
     }
+    
 
     .close-sidebar {
         position: absolute;
-        top: 2.5rem;
+        top: 1.8rem;
         right: 2rem;
-        font-size: 20px;
+        font-size: 2rem !important;
         color: #000;
         cursor: pointer;
     }
@@ -183,7 +189,7 @@ i {
         position: absolute;
         top: 2.5rem;
         right: 2rem;
-        font-size: 20px;
+        font-size: 25px;
         color: #000;
         cursor: pointer;
         z-index: 1055;
@@ -195,10 +201,6 @@ i {
         max-width: 50%;
     }
 
-    html {
-        font-size: 12px;
-      }
-
     .nav-lex-column {
         width: 75%;
     }
@@ -207,7 +209,7 @@ i {
         display: none !important;
     }
 
-    /* Garante que a navbar fique fixa no topo */
+    
     #mobile-navbar {
         position: sticky;
         top: 0;
@@ -217,7 +219,8 @@ i {
    
 
     .mynav {
-        margin-top: 5rem;
+        margin-top: 7rem;
+        
     }
     
     
@@ -226,7 +229,12 @@ i {
     }
 
     #dynamic-content {
-        margin-top: 4rem;
+        margin-top: 10rem;
+       
+    }
+    
+    .sidebar .nav-link {
+        font-size: 2rem;
     }
     
     
