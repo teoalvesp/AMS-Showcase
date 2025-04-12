@@ -27,3 +27,15 @@
     padding-left: 4px;
 }
 
+@media (max-width: 991.98px) {
+    .card-responsivo {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #card-calendar{
+        width: 100%;
+    }
+}
+

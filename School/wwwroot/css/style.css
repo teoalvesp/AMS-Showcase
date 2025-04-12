@@ -90,7 +90,7 @@ i {
     z-index: 2; 
 }
 
-#main-content .content-image {
+.content-init .content-image  {
     position: absolute !important;
     z-index: 1 !important;
     bottom: 0 !important;
@@ -194,11 +194,17 @@ i {
         cursor: pointer;
         z-index: 1055;
     }
+    
 
-    #main-content .content-image {
+    .content-init .content-image {
         
-        max-height: 50%;
-        max-width: 50%;
+        max-height: 30%;
+        max-width: 30%;
+        top: 0.7rem;
+        opacity: 0.70;
+        padding-right: 1rem;
+        
+        
     }
 
     .nav-lex-column {
@@ -219,7 +225,7 @@ i {
    
 
     .mynav {
-        margin-top: 7rem;
+        margin-top: 9rem;
         
     }
     
@@ -227,15 +233,32 @@ i {
     .logo-mobile-top {
         display: block;
     }
-
-    #dynamic-content {
-        margin-top: 10rem;
-       
-    }
     
     .sidebar .nav-link {
-        font-size: 2rem;
+        font-size: 1.6rem;
+        padding-left: 3rem;
+    }
+
+    #main-content {
+        padding: 0 !important;
     }
     
+    
+    #dynamic-content {
+        width: 100%;
+        padding: 0.7rem;
+        box-sizing: border-box;
+    }
+    
+    .content-init{
+        margin-top: 8rem;
+        width: 98%;
+    }
+
+    .main-app-container {
+        min-height: 100vh;
+        height: auto;
+    }
+
     
 }
