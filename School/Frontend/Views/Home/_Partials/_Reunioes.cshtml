@@ -1,7 +1,77 @@
-@* _Reunioes.cshtml *@
+@* _Eventos.cshtml *@
 @{
     Layout = null;
 }
 
-<h2>📞 Reuniões</h2>
-<p>Aqui estão suas reuniões marcadas.</p>
+<div class="col-md-10 mb-4">
+    <div class="mb-4">
+        <h2>
+            <i class="bi bi-people-fill me-2" style="color: #112f5c;"></i>Reuniões
+        </h2>
+        <p class="text-muted">Aqui estão suas reuniões agendadas.</p>
+        <hr>
+    </div>
+    <div class="d-flex align-items-center justify-content-between mb-4">
+        <div>
+            <p class="text-muted">Aqui estão seus eventos agendados</p>
+        </div>
+        <div>
+            <button class="btn btn-primary rounded-circle">
+                <i class="bi bi-plus"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="input-group mb-4" style="max-width: 300px;">
+        <span class="input-group-text bg-white border-end-0"><i class="bi bi-search"></i></span>
+        <input type="text" class="form-control border-start-0" placeholder="Buscar evento..." />
+    </div>
+
+    <div class="d-flex flex-column gap-2">
+        @* Evento 1 *@
+        <div class="bg-white rounded shadow-sm p-2 d-flex justify-content-between align-items-center">
+            <div>
+                <div class="fw-semibold fs-5">Feira de Ciências</div>
+                <div class="text-success small">20 de abril de 2024, 14:00</div>
+            </div>
+            <div class="d-flex gap-3 fs-5 text-secondary">
+                <i class="bi bi-eye-fill cursor-pointer" title="Ver detalhes"></i>
+                <i class="bi bi-pencil cursor-pointer" title="Editar"></i>
+                <i class="bi bi-trash cursor-pointer" title="Excluir"></i>
+            </div>
+        </div>
+
+        @* Evento 2 *@
+        <div class="bg-white rounded shadow-sm p-2 d-flex justify-content-between align-items-center">
+            <div>
+                <div class="fw-semibold fs-5">Reunião Pedagógica</div>
+                <div class="text-success small">25 de abril de 2024, 10:00</div>
+            </div>
+            <div class="d-flex gap-3 fs-5 text-secondary">
+                <i class="bi bi-eye-fill cursor-pointer" title="Ver detalhes"></i>
+                <i class="bi bi-pencil cursor-pointer" title="Editar"></i>
+                <i class="bi bi-trash cursor-pointer" title="Excluir"></i>
+            </div>
+        </div>
+
+        @* Evento 3 *@
+        <div class="bg-white rounded shadow-sm p-2 d-flex justify-content-between align-items-center">
+            <div>
+                <div class="fw-semibold fs-5">Formatura</div>
+                <div class="text-success small">30 de abril de 2024, 19:00</div>
+            </div>
+            <div class="d-flex gap-3 fs-5 text-secondary">
+                <i class="bi bi-eye-fill cursor-pointer" title="Ver detalhes"></i>
+                <i class="bi bi-pencil cursor-pointer" title="Editar"></i>
+                <i class="bi bi-trash cursor-pointer" title="Excluir"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .cursor-pointer:hover {
+        color: #112f5c;
+        cursor: pointer;
+    }
+</style>
